@@ -65,7 +65,7 @@
 - **Установка Pythia8 и FastJet**
 Для моделирования эксперимента и реконструкции адронных струй обязательно установить необходимое ПО. Можно использовать как Google collab так и собственное окружение.
 
-  - Pythia8
+
 wget https://pythia.org/download/pythia83/pythia8313.tgz
 tar -xvf pythia8313.tgz
 cd pythia8313
@@ -77,10 +77,10 @@ make install
 import sys
 sys.path.append('/content/pythia8313-install/lib/')
 
-  - FastJet
 pip install fastjet
 
-- **Моделирование данных**: Запустите файл "data_modeling.ipynb". В результате получите 5 ROOT файлов с данными. 
+
+- **Генерация данных**: Запустите файл "data_modeling.ipynb". В результате получите 5 ROOT файлов с данными. 
 - **Сбор датасета**: Затем запустите исполняемые файлы "classic_dataset.ipynb" и "graph_dataset.ipynb".
 - **Обучение модели**: Для RandomForest запустите "RandomForestRegressor.ipynb", для Графовых нейронных сетей - "GIN.ipynb".
 
