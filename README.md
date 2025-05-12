@@ -79,9 +79,6 @@ make -j4
 
 make install
 
-import sys
-sys.path.append('/content/pythia8313-install/lib/')
-
 pip install fastjet
 
 
