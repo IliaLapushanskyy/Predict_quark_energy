@@ -66,18 +66,24 @@
 Для моделирования эксперимента и реконструкции адронных струй обязательно установить необходимое ПО. Можно использовать как Google collab так и собственное окружение.
 
 
+
 wget https://pythia.org/download/pythia83/pythia8313.tgz
+
 tar -xvf pythia8313.tgz
+
 cd pythia8313
 
 ./configure --prefix=/content/pythia8313-install --with-python-include=/usr/include/python3.11
+
 make -j4
+
 make install
 
 import sys
 sys.path.append('/content/pythia8313-install/lib/')
 
 pip install fastjet
+
 
 
 - **Генерация данных**: Запустите файл "data_modeling.ipynb". В результате получите 5 ROOT файлов с данными. 
